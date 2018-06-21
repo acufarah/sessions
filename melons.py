@@ -26,6 +26,8 @@ class Melon(object):
         self.image_url = image_url
         self.color = color
         self.seedless = seedless
+        self.quantity = 0
+        self.total_price = 0
 
     def price_str(self):
         """Return price formatted as string $x.xx"""
@@ -67,8 +69,9 @@ def read_melon_types_from_file(filepath):
                                       img_url,
                                       color,
                                       seedless)
-
+    print(melon_types)
     return melon_types
+
 
 
 def get_all():
